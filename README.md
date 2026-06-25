@@ -1,0 +1,123 @@
+# Market Activity Monitor
+
+Real-time market monitoring dashboard for equities and crypto assets.
+
+## Features
+
+- Real-time asset monitoring
+- Simple and Advanced visualization modes
+- Candlestick and line chart views
+- Volume anomaly detection
+- Price anomaly detection
+- Live feed status monitoring
+- Market open/closed status detection
+- Data freshness tracking
+- Automatic background data collection
+- Local SQLite caching
+- Reset chart view functionality
+
+## Supported Assets
+
+### Equities & ETFs
+- AAPL
+- NVDA
+- MSFT
+- TSLA
+- SPY
+- QQQ
+
+### Crypto
+- BTC-USD
+- ETH-USD
+
+## Architecture
+
+feed.py
+- Background data collector
+- Downloads market data every minute
+- Stores data in SQLite database
+
+engine.py
+- Reads cached market data
+- Calculates indicators
+- Detects anomalies
+
+Dash Application
+- Interactive UI
+- Live charts
+- Analytics dashboard
+- Simple / Advanced modes
+
+## Indicators
+
+### Price Anomaly
+
+Based on Z-Score analysis of price movement.
+
+Triggers when price behavior significantly deviates from normal market conditions.
+
+### Volume Anomaly
+
+Based on Z-Score analysis of trading volume.
+
+Highlights unusually high market activity.
+
+## Data Source
+
+Yahoo Finance (yfinance)
+
+## Technologies
+
+- Python
+- Dash
+- Plotly
+- Pandas
+- SQLite
+- yfinance
+
+## Screenshots
+
+### Simple Mode
+
+(Screenshot)
+
+### Advanced Mode
+
+(Screenshot)
+
+## Notes
+
+- Market data is collected in the background.
+- Dashboard refreshes automatically.
+- Crypto markets are tracked 24/7.
+- Equity market status follows NYSE trading hours.
+
+
+## Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/quant-anomaly-terminal.git](https://github.com/YOUR_USERNAME/quant-anomaly-terminal.git)
+   cd quant-anomaly-terminal
+   ```
+
+2. **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    (Note: Ensure your requirements.txt includes: dash, dash-bootstrap-components, pandas, numpy, yfinance)
+
+3. **Initialize and run the background data collector:**
+    ```bash
+    python feed.py
+    ```
+    Keep this process running. It will generate the market_data.db and initialize the background sync logs in feed_service.log.
+
+4. **Launch the terminal web interface:**
+    **In a separate terminal window, run:**
+    ```bash
+    python main.py
+    ```
+
+5. **Access the terminal:**
+    **Open your browser and navigate to http://127.0.0.1:8050/**
