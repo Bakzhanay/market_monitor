@@ -116,6 +116,7 @@ Yahoo Finance (yfinance)
 4. **Launch the terminal web interface:**
     **In a separate terminal window, run:**
     ```bash
+    cd market_monitor
     python main.py
     ```
 
