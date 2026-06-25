@@ -79,11 +79,11 @@ Yahoo Finance (yfinance)
 
 ### Simple Mode
 
-(Screenshot)
+<img width="1920" height="873" alt="simple_mode" src="https://github.com/user-attachments/assets/b241843a-a2ae-422d-96f0-c6a2d68449c7" />
 
 ### Advanced Mode
 
-(Screenshot)
+<img width="1920" height="874" alt="advanced_mode" src="https://github.com/user-attachments/assets/ccd9342f-7de4-4536-82cb-2ad4806a0fce" />
 
 ## Notes
 
@@ -97,7 +97,7 @@ Yahoo Finance (yfinance)
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/quant-anomaly-terminal.git](https://github.com/YOUR_USERNAME/quant-anomaly-terminal.git)
+   git clone https://github.com/Bakzhanay/market_monitor.git
    cd quant-anomaly-terminal
    ```
 
