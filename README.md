@@ -101,23 +101,34 @@ Yahoo Finance (yfinance)
    cd quant-anomaly-terminal
    ```
 
-2. **Install dependencies:**
+2. **Create a virtual environment:**
+   ```bash
+   python -m venv .venv
+   ```
+   *Activate the virtual environment:*
+      **Windows:**
+         - .venv\Scripts\activate
+      **macOS / Linux:**
+         - source .venv/bin/activate
+
+4. **Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
     (Note: Ensure your requirements.txt includes: dash, dash-bootstrap-components, pandas, numpy, yfinance)
 
-3. **Initialize and run the background data collector:**
+5. **Initialize and run the background data collector:**
     ```bash
     python feed.py
     ```
     Keep this process running. It will generate the market_data.db and initialize the background sync logs in feed_service.log.
 
-4. **Launch the terminal web interface:**
+6. **Launch the terminal web interface:**
     **In a separate terminal window, run:**
     ```bash
+    cd market_monitor
     python main.py
     ```
 
-5. **Access the terminal:**
+7. **Access the terminal:**
     **Open your browser and navigate to http://127.0.0.1:8050/**
