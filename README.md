@@ -97,7 +97,7 @@ Yahoo Finance (yfinance)
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Bakzhanay/market_monitor.git
+   git clone https://github.com/Bakzhanay/market-monitor.git
    cd quant-anomaly-terminal
    ```
 
