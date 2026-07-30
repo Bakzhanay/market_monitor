@@ -129,6 +129,11 @@ Yahoo Finance (yfinance)
     cd market-monitor
     python main.py
     ```
+    *Activate the virtual environment:*
+      **Windows:**
+         - .venv\Scripts\activate
+      **macOS / Linux:**
+         - source .venv/bin/activate
 
 7. **Access the terminal:**
     **Open your browser and navigate to http://127.0.0.1:8050/**
